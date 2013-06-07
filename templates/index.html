@@ -1,0 +1,22 @@
+$def with(page)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html><head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>二手信息</title> 
+</head>
+<body>
+<div>
+$for item in page:
+	<div>
+		<ul>
+		<li><span>$item[1]</span><a href="$item[2]">$item[3]</a>
+			<span>$item[0]</span>
+		</li>
+		</ul>
+	</div>
+
+</div>
+</body>
+</html>
